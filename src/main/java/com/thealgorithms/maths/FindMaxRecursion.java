@@ -1,4 +1,5 @@
 package com.thealgorithms.maths;
+import java.security.SecureRandom;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -6,7 +7,7 @@ import java.util.Random;
 public class FindMaxRecursion {
 
     public static void main(String[] args) {
-        Random rand = new Random();
+        Random rand = new SecureRandom();
 
         /* rand size */
         int size = rand.nextInt(100) + 1;
