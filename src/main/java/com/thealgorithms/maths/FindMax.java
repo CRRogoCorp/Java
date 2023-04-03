@@ -1,4 +1,5 @@
 package com.thealgorithms.maths;
+import java.security.SecureRandom;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -9,7 +10,7 @@ public class FindMax {
      * Driver Code
      */
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new SecureRandom();
 
         /* random size */
         int size = random.nextInt(100) + 1;
