@@ -24,11 +24,11 @@ public class StackPostfixNotation {
                 int num1 = s.pop();
                 String op = tokens.next();
 
-                if (op.equals("+")) {
+                if ("+".equals(op)) {
                     s.push(num1 + num2);
-                } else if (op.equals("-")) {
+                } else if ("-".equals(op)) {
                     s.push(num1 - num2);
-                } else if (op.equals("*")) {
+                } else if ("*".equals(op)) {
                     s.push(num1 * num2);
                 } else {
                     s.push(num1 / num2);
