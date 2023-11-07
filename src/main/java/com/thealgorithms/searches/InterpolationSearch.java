@@ -1,6 +1,7 @@
 package com.thealgorithms.searches;
 
 import static java.lang.String.format;
+import java.security.SecureRandom;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -57,7 +58,7 @@ class InterpolationSearch {
 
     // Driver method
     public static void main(String[] args) {
-        Random r = new Random();
+        Random r = new SecureRandom();
         int size = 100;
         int maxElement = 100000;
         int[] integers = IntStream
