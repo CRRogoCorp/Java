@@ -380,7 +380,7 @@ public class SinglyLinkedList extends Node {
         SinglyLinkedList list = new SinglyLinkedList();
         assert list.isEmpty();
         assert list.size() == 0 && list.count() == 0;
-        assert list.toString().equals("");
+        assert "".equals(list.toString());
 
         /* Test insert function */
         list.insertHead(5);
@@ -388,7 +388,7 @@ public class SinglyLinkedList extends Node {
         list.insertHead(10);
         list.insert(3);
         list.insertNth(1, 4);
-        assert list.toString().equals("10->7->5->3->1");
+        assert "10->7->5->3->1".equals(list.toString());
         System.out.println(list.toString());
         /* Test search function */
         assert list.search(10) &&
@@ -405,7 +405,7 @@ public class SinglyLinkedList extends Node {
         list.deleteHead();
         list.deleteNth(1);
         list.delete();
-        assert list.toString().equals("7->3");
+        assert "7->3".equals(list.toString());
         System.out.println(list.toString());
         assert list.size == 2 && list.size() == list.count();
 
